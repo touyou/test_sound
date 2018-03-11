@@ -12,6 +12,7 @@
 		6369203E2053AA6000352380 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6369203C2053AA6000352380 /* Main.storyboard */; };
 		636920402053AA6000352380 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6369203F2053AA6000352380 /* Assets.xcassets */; };
 		636920432053AA6000352380 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 636920412053AA6000352380 /* LaunchScreen.storyboard */; };
+		6369204B2054B70000352380 /* SOUND_NAME.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6369204A2054B70000352380 /* SOUND_NAME.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6369203F2053AA6000352380 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		636920422053AA6000352380 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		636920442053AA6000352380 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6369204A2054B70000352380 /* SOUND_NAME.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = SOUND_NAME.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,7 @@
 				636920382053AA6000352380 /* AppDelegate.swift */,
 				6369203A2053AA6000352380 /* ViewController.swift */,
 				6369203C2053AA6000352380 /* Main.storyboard */,
+				6369204A2054B70000352380 /* SOUND_NAME.mp3 */,
 				6369203F2053AA6000352380 /* Assets.xcassets */,
 				636920412053AA6000352380 /* LaunchScreen.storyboard */,
 				636920442053AA6000352380 /* Info.plist */,
@@ -124,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				636920432053AA6000352380 /* LaunchScreen.storyboard in Resources */,
+				6369204B2054B70000352380 /* SOUND_NAME.mp3 in Resources */,
 				636920402053AA6000352380 /* Assets.xcassets in Resources */,
 				6369203E2053AA6000352380 /* Main.storyboard in Resources */,
 			);
