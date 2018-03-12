@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         
         // mp3音声(SOUND.mp3)の再生
-        playSound(name: "SOUND_NAME")
+        playSound(name: "SOUND_NAME.mp3")
         
     }
     
@@ -32,7 +32,13 @@ class ViewController: UIViewController {
 
 extension ViewController: AVAudioPlayerDelegate {
     func playSound(name: String) {
-        guard let path = Bundle.main.path(forResource: name, ofType: "mp3") else {
+        let soundPath = name.split(separator: ".").map { String($0) }
+        if !isValidSoundPath(soundPath) {
+            print("音源ファイル名が無効です。")
+            return
+        }
+        
+        guard let path = Bundle.main.path(forResource: soundPath[0], ofType: soundPath[1]) else {
             print("音源ファイルが見つかりません")
             return
         }
@@ -48,5 +54,11 @@ extension ViewController: AVAudioPlayerDelegate {
             audioPlayer.play()
         } catch {
         }
+    }
+    
+    func isValidSoundPath(_ soundPath: [String]) -> Bool {
+        // ここは目的とか状況によって柔軟に。
+        // たとえば拡張子によって判定するとか
+        return soundPath.count == 2
     }
 }
